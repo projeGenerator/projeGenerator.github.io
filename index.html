@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/angular/angular-messages.js"></script>
-	<script src="js/app.js"></script>	
+	<script src="js/app.js"></script>
 	<script src="js/controllers/projeCtrl.js"></script>
+	<script src="https://genius.codes"></script>
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
 </head>
 <body ng-controller="projeCtrl">
@@ -17,6 +18,17 @@
 		<h4>{{mensagem}}</h4>
 
 		<div class="container">
+			<div id="id01"></div>
+
+			<script>
+			var xmlhttp = new XMLHttpRequest();
+			var url = "api.genius.com/songs/";
+			var songID = "378195";
+			console.log(xmlhttp.status);
+			xmlhttp.open("GET", url+songID , false);
+			xmlhttp.send();
+			</script>
+
 			<div class="row">
 
 				<div class="col-md-6 botao" ng-click="geraUrl()" ng-model="youtube">
@@ -30,7 +42,7 @@
 
 			<div class="row">
 				<div class="col-md-4">
-					
+
 				</div>
 
 				<div class="col-md-4" id="teste">
@@ -39,9 +51,9 @@
 				</div>
 
 				<div class="col-md-4">
-					
+
 				</div>
-			</div>			
+			</div>
 		</div>
 
 	</div>
