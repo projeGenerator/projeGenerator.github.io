@@ -9,7 +9,6 @@ html, body{
 }
 
 #linkYT {
-    background-color: darkblue;
     width: 100%;
     height: 100%;
 }
@@ -37,6 +36,7 @@ html, body{
 }
 
 .video-container {
+        background-image: url(../images/toolCompressed.jpg);
         width: 100%;
         height: 335px;
 }
